@@ -28,12 +28,10 @@ class EquationsSolver:
                         self._matrix[i][j] -= c*self._matrix[k][j]
         if self._matrix[len(self._matrix)-1][len(self._matrix)-1] == 0:
                         print("Can not perform the operaton")
-    
     def show(self):
         """Prints the coefficients of the system of linear equation. 
            It takes zero parameters.
-        """
-        
+        """       
         i = len(self._matrix)
         j = len(self._matrix[0])
         print(i,j)
@@ -65,10 +63,6 @@ class EquationsSolver:
             i -= 1
         for a in x:
             print(a,end='\n')
-
-
-
-
 #testing the module
 if __name__ == "__main__":
     mat = EquationsSolver([2,1,2,5],[1,6,4,0],[4,8,5,1],vector=[6,10,26,35])
